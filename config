@@ -1,1 +1,4 @@
 include $HOME/.config/sway/config.d/*.conf
+
+# Autostart applications
+exec swaymsg "workspace code; exec kitty;"
