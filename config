@@ -1,7 +1,7 @@
 include $HOME/.config/sway/config.d/*.conf
 
 # Set the background images.
-output '*' bg "$(find $wallpapers_path -type f | shuf -n1)" fill
+output '*' bg "$(find $wallpapers_path -maxdepth 1 -type f | shuf -n1)" fill
 
 # Autostart applications
 exec swaymsg "workspace code; exec kitty;"
